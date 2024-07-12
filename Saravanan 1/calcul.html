@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>calculater</title>
+    <script>
+        function addition(){
+           var x=parseInt(document.getElementById("val1").value);
+           var y=parseInt(document.getElementById("val2").value);
+           var z=x+y;
+          document.getElementById("ans").value=z;
+        }
+
+        function subtract(){
+        var x=parseInt(document.getElementById("val1").value);
+        var y=parseInt(document.getElementById("val2").value);
+        var z=x-y;
+          document.getElementById("ans").value=z;
+        }
+
+        function multi(){
+        var x=parseInt(document.getElementById("val1").value);
+        var y=parseInt(document.getElementById("val2").value);
+        var z=x*y;
+         document.getElementById("ans").value=z;
+        }
+
+        function division(){
+        var x=parseInt(document.getElementById("val1").value);
+        var y=parseInt(document.getElementById("val2").value);
+        var z=x/y;
+          document.getElementById("ans").value=z;
+        }
+
+        function modulo(){
+        var x=parseInt(document.getElementById("val1").value);
+        var y=parseInt(document.getElementById("val2").value);
+        var z=x%y;
+          document.getElementById("ans").value=z;
+        }
+
+    </script>
+</head>
+<style>
+    #calculate{
+       width: 200px;
+       height: 320px;
+       background-color: skyblue;
+       border-radius: 10px;
+    }
+</style>
+<body>
+    <div id="calculate" ><br>
+        <input type="text" placeholder="Answer" id="ans" style="width: 165px;border-radius: 5px;margin-left:10px;"><br> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="1" > &nbsp;&nbsp;&nbsp;
+        <input type="button" value="2"> &nbsp;&nbsp;&nbsp;
+        <input type="button" value="3"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="4"> &nbsp;&nbsp;&nbsp;
+        <input type="button" value="5"> &nbsp;&nbsp;&nbsp;
+        <input type="button" value="6"> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="7"> &nbsp;&nbsp;&nbsp;
+        <input type="button" value="8"> &nbsp;&nbsp;&nbsp;
+        <input type="button" value="9"> <br><br>
+        <hr style="width: 198px;height:2px;margin: 0px;background-color: black;"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="add" onclick="addition()">&nbsp;&nbsp;
+        <input type="button" value="sub" onclick="subtract()">&nbsp;&nbsp;
+        <input type="button" value="mul" onclick="multi()"> <br><br>&nbsp;&nbsp;&nbsp;
+        <input type="button" value="div" onclick="division()" style="margin-left: 30px;"> &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="mod" onclick="modulo()"><br><br>
+        <form action="">
+        A: <input type="text" id="val1"> <br> <br>
+        B: <input type="text" id="val2">
+        
+    </form>
+    </div>
+</body>
+</html>
